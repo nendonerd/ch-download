@@ -6,6 +6,7 @@
 
 ```sh
 git clone https://github.com/nendonerd/ch-download.git
+npm install
 ```
 
 # How to use:
@@ -19,6 +20,8 @@ for convenience, you can add an alias of the command to .profile(MacOS) or .bash
 ```sh
 alias hunt="node /path/to/index -u"
 ```
+and don't forget to reload .profile/.bashrc: ```source ~/.bashrc```
+
 then you can cd into the folder you want to put your download files, and run ```hunt <url>```
 
 ### Arguments:
