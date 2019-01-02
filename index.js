@@ -82,7 +82,7 @@ function runGetVideos(token) {
   getVideos(courseUrl, token)
     .then(data => {
       data.result.map((url, i) => {
-        const name = data.names[i].toString().replace(/[^A-Za-zА-Яа-я\d\s]/gmi, ''); // alelov
+        const name = data.names[i].toString().replace(/[^A-Za-zА-Яа-я\d\s]/gmi, '').replace('Урок ', ''); // alelov
         videos.push({ url, name });
       });
       console.log('Start download videos, please wait...');
