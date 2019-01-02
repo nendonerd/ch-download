@@ -12,12 +12,12 @@ git clone https://github.com/nendonerd/ch-download.git
 
 ```sh
 cd /path/to/ch-download
-coursehunters -u course-url [-d dirname] [-l lessons] [-e email] [-p password]
+node index -u course-url [-d dirname] [-l lessons] [-e email] [-p password]
 ```
 
 for convenience, you can add an alias of the command to .profile(MacOS) or .bashrc(Linux)
 ```sh
-alias hunt="/path/to/coursehunters -u"
+alias hunt="node /path/to/index -u"
 ```
 then you can cd into the folder you want to put your download files, and run ```hunt <url>```
 
